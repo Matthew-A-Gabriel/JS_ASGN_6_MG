@@ -1,6 +1,6 @@
 const strings = "strings"
 console.log("Starting Log" + " - " + strings)
-console.log ("length recreation")
+console.log ("Length Recreation")
 
 // Length
 function lengthFunction() {
@@ -22,7 +22,7 @@ lengthFunction()
 
 // Slice
 console.log("-Space-")
-console.log("Slice Receation")
+console.log("Slice Recreation")
 
 function sliceFunction() {
     let sInput = 1
@@ -50,6 +50,19 @@ function sliceFunction() {
 sliceFunction()
 
 // Replace
+// console.log("-Space-")
+// console.log("Replace Recreation")
+
+// var replaceableString = "one two tree"
+// var selectedWord = "tree"
+// var replacer = "three"
+// var newString = ""
+// function replaceFunction() {
+//     if(replaceableString.hasOwnProperty(selectedWord) === true){
+
+//     }
+
+// }
 
 
 
@@ -58,8 +71,20 @@ sliceFunction()
 
 
 // Concat
+console.log("-Space-")
+console.log("Concat Recreation")
 
+var string1 = "apple"
+console.log("string 1 - " + string1)
+var string2 = "cider"
+console.log("string 2 - " + string2)
+var concatedString = ""
 
+function concatFunction() {
+    concatedString = string1 + " " + string2
+    console.log("Concacted String - " + concatedString)
+}
+concatFunction()
 
 // CharAt
 
