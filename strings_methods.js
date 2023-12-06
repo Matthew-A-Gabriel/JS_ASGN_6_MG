@@ -50,19 +50,21 @@ function sliceFunction() {
 sliceFunction()
 
 // Replace
-// console.log("-Space-")
-// console.log("Replace Recreation")
+console.log("-Space-")
+console.log("Replace Recreation")
 
-// var replaceableString = "one two tree"
-// var selectedWord = "tree"
-// var replacer = "three"
-// var newString = ""
-// function replaceFunction() {
-//     if(replaceableString.hasOwnProperty(selectedWord) === true){
+var replaceableString = "one two tree"
+var selectedWord = "tree"
+var replacer = "three"
+var newString = ""
+function replaceFunction() {
+    let repCount = 0;
+    for (var i = 0 ; i <= replaceableString.length ; i++)
+        if(replaceableString){
 
-//     }
+        }
 
-// }
+}
 
 
 
