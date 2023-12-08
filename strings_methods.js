@@ -57,11 +57,13 @@ var replaceableString = "one two tree"
 var selectedWord = "tree"
 var replacer = "three"
 var newString = ""
+var arrayz = [];
 function replaceFunction() {
     let repCount = 0;
     for (var i = 0 ; i <= replaceableString.length ; i++)
-        if(replaceableString){
-
+        for(var z = 0; z <= selectedWord.length ; i++)
+            if(replaceableString[i] === selectedWord[i]){
+                arrayz.push(replaceableString)
         }
 
 }
@@ -89,11 +91,17 @@ function concatFunction() {
 concatFunction()
 
 // CharAt
+console.log("-Space-")
+console.log("CharAt Recreation")
+var letterAt = ""
+var inputString = "NYEHAH!"
+var charWanted = 3
+function charAtFun() {
+    console.log("You want to View the string - " + inputString)
+    console.log("You want to get the " + charWanted + " letter!")
+    letterAt = inputString[charWanted - 1]
+    console.log("Your selected Character was! " + letterAt)
+}
+charAtFun()
 
-
-
-// 
-
-
-
-// 
+console.log("END LOGs")
