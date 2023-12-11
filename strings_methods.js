@@ -53,25 +53,48 @@ sliceFunction()
 console.log("-Space-")
 console.log("Replace Recreation")
 
-var replaceableString = "one two tree"
-var selectedWord = "tree"
-var replacer = "three"
-var newString = ""
-var arrayz = [];
-function replaceFunction() {
-    let repCount = 0;
-    for (var i = 0 ; i <= replaceableString.length ; i++)
-        for(var z = 0; z <= selectedWord.length ; i++)
-            if(replaceableString[i] === selectedWord[i]){
-                arrayz.push(replaceableString)
+
+let wordWhoseLettersAreBeingReplaced = "Amazing"
+let nStr = ""
+let checkingLetter = "a"
+let replacingLetter = "b" 
+let rLValue = 0
+
+console.log("The letter that is replacing = " + replacingLetter)
+console.log("the word that is being replaced = " + wordWhoseLettersAreBeingReplaced)
+console.log("Letter that is being replaced = " + checkingLetter)
+function replFunc(){
+    let lRValue = 0
+    function lengthFunctionForReplace() {
+        for (var i = 0; i < i+1; i++) {
+            if(wordWhoseLettersAreBeingReplaced[i] === undefined){
+                break
+            } else {
+                lRValue++
+            }
         }
-
+    }
+    lengthFunctionForReplace()
+    for (var z = 0; z < lRValue; z++){
+        if (wordWhoseLettersAreBeingReplaced[z].toLowerCase === checkingLetter.toLowerCase) {
+            for(var m = 0 ; m < lRValue ; m++){
+                if (m !== z) {
+                    nStr + wordWhoseLettersAreBeingReplaced[m]
+                } else {
+                    nStr + replacingLetter 
+                }
+            }
+            console.log(nStr)
+        }
+    }
 }
-
+replFunc()
+console.log(nStr)
 
 
 // Replace All
-
+console.log("-Space-")
+console.log("Replace All Recreation")
 
 
 // Concat
