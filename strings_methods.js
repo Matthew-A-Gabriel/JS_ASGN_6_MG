@@ -54,37 +54,42 @@ console.log("-Space-")
 console.log("Replace Recreation")
 
 
-let wordWhoseLettersAreBeingReplaced = "Amazing"
+let wordWhoseLettersAreBeingReplaced = "adore"
 let nStr = ""
-let checkingLetter = "a"
-let replacingLetter = "b" 
-let rLValue = 0
+let checkingLetter = "d"
+let replacingLetter = "G" 
+let countingTheTimes = 0
+let lRValue = 0
+let index = -1
+
+function lengthFunctionForReplace() {
+    for (var i = 0; i < i+1; i++) {
+        if(wordWhoseLettersAreBeingReplaced[i] === undefined){
+            break
+        } else {
+            lRValue++
+        }
+    }
+}
+lengthFunctionForReplace()
 
 console.log("The letter that is replacing = " + replacingLetter)
 console.log("the word that is being replaced = " + wordWhoseLettersAreBeingReplaced)
 console.log("Letter that is being replaced = " + checkingLetter)
+
 function replFunc(){
-    let lRValue = 0
-    function lengthFunctionForReplace() {
-        for (var i = 0; i < i+1; i++) {
-            if(wordWhoseLettersAreBeingReplaced[i] === undefined){
-                break
-            } else {
-                lRValue++
-            }
+    for (var z = 0; z < lRValue; z++){
+        if (wordWhoseLettersAreBeingReplaced[z] === checkingLetter){
+            index = z
         }
     }
-    lengthFunctionForReplace()
-    for (var z = 0; z < lRValue; z++){
-        if (wordWhoseLettersAreBeingReplaced[z].toLowerCase === checkingLetter.toLowerCase) {
-            for(var m = 0 ; m < lRValue ; m++){
-                if (m !== z) {
-                    nStr + wordWhoseLettersAreBeingReplaced[m]
-                } else {
-                    nStr + replacingLetter 
-                }
-            }
-            console.log(nStr)
+
+    for (var i = 0; i < lRValue; i++){
+        if (i === index && countingTheTimes === 0){
+            nStr += replacingLetter
+            countingTheTimes++
+        } else {
+            nStr += wordWhoseLettersAreBeingReplaced[i]
         }
     }
 }
@@ -96,6 +101,47 @@ console.log(nStr)
 console.log("-Space-")
 console.log("Replace All Recreation")
 
+let wordWhoseLettersAreBeingReplaced2 = "amazing"
+let nStr2 = ""
+let checkingLetter2 = "a"
+let replacingLetter2 = "T" 
+let countingTheTimes2 = 0
+let lRValue2 = 0
+let index2 = []
+
+function lengthFunctionForReplace2() {
+    for (var i = 0; i < i+1; i++) {
+        if(wordWhoseLettersAreBeingReplaced2[i] === undefined){
+            break
+        } else {
+            lRValue2++
+        }
+    }
+}
+lengthFunctionForReplace2()
+
+console.log("The letter that is replacing = " + replacingLetter2)
+console.log("the word that is being replaced = " + wordWhoseLettersAreBeingReplaced2)
+console.log("Letter that is being replaced = " + checkingLetter2)
+
+function replFunc2(){
+    for (var z = 0; z < lRValue2; z++){
+        if (wordWhoseLettersAreBeingReplaced2[z] === checkingLetter2){
+            index2.push(z)
+        }
+    }
+
+    for (var i = 0; i < lRValue2; i++){
+        if (i === index2[countingTheTimes2]){
+            nStr2 += replacingLetter2
+            countingTheTimes2++
+        } else {
+            nStr2 += wordWhoseLettersAreBeingReplaced2[i]
+        }
+    }
+}
+replFunc2()
+console.log(nStr2)
 
 // Concat
 console.log("-Space-")
